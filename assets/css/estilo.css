@@ -1,0 +1,299 @@
+/* Header*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 135px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #cecece;
+  color: black;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.search-box input {
+  padding: 5px;
+  border: solid #000000;
+  border-radius: 5px;
+  width: 280px;
+  height: 40px;
+}
+
+a{
+  color: #198754 !important;
+}
+
+button{
+  background-color: #198754;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+ 
+
+.post-acciones button {
+  color: #000000 !important;
+}
+
+.search-box button {
+  padding: 5px;
+  background-color: #409e2d;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-menu i {
+  font-size: 20px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.user-menu img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #409e2d;
+}
+
+
+
+/*        */
+
+
+
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu svg{
+    margin-right: 4px;
+}
+
+.usuario{
+    margin-bottom: 10px;
+}
+
+.usuario span {
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+.usuario img{
+    width: 50px;     
+    height: 50px;     
+    object-fit: cover; 
+    border-radius: 50%;
+}
+
+.post {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+  
+  .post-header {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .post-header img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .post-imagen {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .post-acciones {
+    display: flex;
+    gap: 2px;
+    background-color: #ffffff;
+  }
+
+  
+  
+  .post-acciones button {
+    background: none;
+    border: none;
+    margin: 10px 0px 0px 5px;
+    cursor: pointer;
+  }
+  .post-descripcion {
+    margin: 10px;
+  }
+  
+  .post-comentarios {
+    margin: 5px;
+  }
+
+  .post-comentarios img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+
+  .comentario{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .comentario p{
+    margin-left: 10px;
+    
+  }
+  
+  
+  .comentario-form {
+    display: flex;
+  }
+  
+  .comentario-form input {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .comentario-form button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    background-color: #198754;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+.publicidad img{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+li{
+    list-style: none;
+}
+
+.login-popup {
+  position: absolute;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  margin-top: 7%;
+  margin-left: 27%;
+}
+
+.login-popup button{
+  margin-top: 20px;
+}
+
+/* Hace desaparecer el contenido de la pagina mientras el login pop up este activo */
+
+.se-muestra{
+    display: flex;
+}
+
+.no-se-muestra{
+    display: none !important;
+}
+
+.sugeridos{
+  display: none;
+}
+
+
+
+
+
+
+.heart {
+  width: 22px;
+  height: 22px;
+  background-color: #ccc;
+  position: relative;
+  transform: rotate(-45deg);
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-color: inherit;
+  border-radius: 50%;
+  position: absolute;
+        }
+
+.heart:before {
+  top: -9px;
+  left: 0;
+}
+
+.heart:after {
+  left: 9px;
+  top: 0;
+}
+
+.heart.clicked {
+  transform: scale(1.2) rotate(-45deg);
+  background-color: red;
+}
+
+
+.save-icon {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.save-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: #ccc;
+  transition: fill 0.3s ease, transform 0.3s ease;
+}
+
+.save-icon.saved svg {
+  fill: #0084ff;
+  transform: scale(1.2);
+}
